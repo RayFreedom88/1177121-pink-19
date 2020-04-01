@@ -9,7 +9,7 @@
       <a class="page-header__logo" href="" >
         <img class="page-header__logo--img" src="https://via.placeholder.com/150x150" alt="Логотип сайта фотоприложения «Пинк»">
       </a>
-
+      <!-- Main-nav - Меню навигации -->
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button" >Открыть меню</button>
         <div class="main-nav__wrapper">
@@ -34,7 +34,7 @@
     <main class="page-main">
 
       <h1 class="visually-hidden">Сайт фотоприложения «Пинк» для раскрашивания серых будней</h1>
-
+      <!-- Intro -->
       <section class="intro">
         <h2 class="visually-hidden">Скачать приложение</h2>
 
@@ -61,7 +61,7 @@
 
         <p class="intro__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
-
+      <!-- Advantage - Преимущества -->
       <section class="advantage">
         <h2 class="visually-hidden">Преимущества</h2>
 
@@ -84,10 +84,11 @@
 
         <img src="https://via.placeholder.com/150x150" width="157" height="320" alt="Изображение телефона">
       </section>
-
+      <!-- Reviews - Отзывы -->
       <section class="reviews">
+        <h2 class="reviews__title">Отзывы о нас</h2>
+
         <div class="reviews__wrapper slider">
-          <h2 class="reviews__title">Отзывы о нас</h2>
           <div class="reviews__list  slider__list">
             <blockquote class="reviews__item  slider__item">
               <cite class="reviews__author-name">Николай Петров</cite>
@@ -95,13 +96,64 @@
             </blockquote>
           </div>
         </div>
-
         <p class="reviews__toggles slider__toggles">
           <button class="slider__toggle" type="button">1</button>
           <button class="slider__toggle" type="button">2</button>
           <button class="slider__toggle" type="button">3</button>
         </p>
       </section>
+      <!-- Prices - Прайс -->
+      <section class="prices">
+        <h2 class="visually-hidden">Прайс приложения Pink</h2>
+
+        <div class="prices__wraper slider">
+          <table class="prices__table prices-list">
+            <tr class="prices-list__title">
+              <th>База 1,99 USD</th>
+              <th class="prices-list__title--hit">Стандарт 3,99 USD</th>
+              <th>Анлим 9,99 USD</th>
+            </tr>
+            <tr class="prices-list__item">
+              <td class="prices-list__cell prices-list__cell--no">Розовый фильтр</td>
+              <td class="prices-list__cell prices-list__cell--yes">Розовый фильтр</td>
+              <td class="prices-list__cell prices-list__cell--yes">Розовый фильтр</td>
+            </tr>
+            <tr class="prices-list__item">
+              <td class="prices-list__cell prices-list__cell--no">Смайлики</td>
+              <td class="prices-list__cell prices-list__cell--yes">Смайлики</td>
+              <td class="prices-list__cell prices-list__cell--yes">Смайлики</td>
+            </tr>
+            <tr class="prices-list__item">
+              <td class="prices-list__cell prices-list__cell--no">Комментарии</td>
+              <td class="prices-list__cell prices-list__cell--no">Комментарии</td>
+              <td class="prices-list__cell prices-list__cell--yes">Комментарии</td>
+            </tr>
+          </table>
+          <p class="prices__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+      <!-- Feedback - Обратная связь -->
+      <section class="feedback">
+        <div class="feedback__wrapper">
+          <div class="feedback__contacts contacts">
+            <b class="contacts__title">Остались вопросы? Свяжитесь с нами!</b>
+            <p class="contacts__text">
+              Звоните: <br>
+              <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a> <br>
+              Пишите: <br>
+              <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a> <br>
+              Приезжайте в гости: <br>
+              <span class="contacts__adress">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</span>
+            </p>
+          </div>
+          <iframe class="feedback__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.320858716385143!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1582307010902!5m2!1sru!2sru" height="100" allowfullscreen="" title="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+          </iframe>
+        </div>
+      </section>  
     </main>
   </body>
 </html>
