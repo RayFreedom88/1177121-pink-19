@@ -1,0 +1,39 @@
+/* index.html/intro.scss */
+
+.intro {
+  width: 320px;
+  margin: 0 auto;
+
+  background-image: url(../img/iphone-hand-mobile@1x.png);
+  background-repeat: no-repeat;
+  background-position: 0 115px;
+}
+
+.intro__slogan {
+  display: block;
+
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+
+  width: 240px;
+
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 28px;
+  padding-bottom: 347px;
+}
+
+.intro__list {
+  list-style: none;
+}
+
+.intro__desc {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #ffffff;
+  text-align: center;
+}

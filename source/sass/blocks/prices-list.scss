@@ -1,0 +1,32 @@
+/* index.html/prices-list.scss */
+
+.prices-list {
+  width: 840px;
+
+  background-color: $bg-lightgrey;
+}
+
+.prices-list__item {
+  width: 276px;
+}
+
+.prices-list__title {
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  background-color: $bg-lightblue;
+
+  padding-top: 23px;
+  padding-bottom: 21px;
+}
+
+.prices-list__cell {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: left;
+  background-color: $bg-white;
+
+  padding-top: 22px;
+  padding-left: 20px;
+  padding-bottom: 23px;
+}

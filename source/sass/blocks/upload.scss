@@ -1,0 +1,116 @@
+/* photo.html/upload.scss */
+
+.upload {
+  padding-top: 20px;
+  background-color: $bg-lightgrey;
+}
+
+.upload__form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+}
+
+.upload__icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 238px;
+
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.upload__crop,
+.upload__fill,
+.upload__contrast {
+  display: block;
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+  cursor: pointer;
+
+  width: 48px;
+  height: 48px;
+}
+
+.upload__crop {
+  background-image: url(../../img/icon-editor-crop.svg);
+
+  &--active {
+    background-image: url(../../img/icon-editor-crop-on.svg);
+  }
+}
+
+.upload__fill {
+  background-image: url(../../img/icon-editor-fill.svg);
+}
+
+.upload__contrast {
+  background-image: url(../../img/icon-editor-contrast.svg);
+}
+
+.upload__item-range {
+  display: none;
+
+  &--active {
+    display: block;
+
+    width: 238px;
+
+    margin: 0 auto;
+  }
+}
+
+.upload__button-wrapper {
+  text-align: center;
+
+  padding-top: 30px;
+}
+
+.upload__button {
+  min-width: 280px;
+  margin: 6px 0;
+}
+
+.upload__button--submit {
+  color: $text-pink;
+  border-color: $bg-pink;
+
+  margin-top: 30px;
+
+  &:hover {
+    color: $text-white;
+    background-color: $bg-pink;
+  }
+
+  &:active {
+    color: rgba($text-white, 0.3);
+  }
+}
+
+.upload__button--сancel {
+  color: rgba($text-blue, 0.1);
+  border-color: rgba($bc-blue, 0.1);
+
+  margin-bottom: 41px;
+
+  &:hover {
+    color: rgba($text-blue, 0.3);
+    border-color: rgba($bc-blue, 0.3);
+  }
+
+  &:active {
+    color: rgba($text-white, 0.3);
+    border-color: transparent;
+    background-color: rgba($bg-lightblue, 0.3);
+  }
+}

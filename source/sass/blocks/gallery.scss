@@ -1,0 +1,31 @@
+/* photo.html/gallery.scss */
+
+.gallery {
+  background-color: $bg-white;
+}
+
+.gallery__wrapper {
+  margin: 0 auto;
+}
+
+.gallery__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.gallery__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #283645;
+  text-align: center;
+
+  width: 255px;
+
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  white-space: pre-line;
+}

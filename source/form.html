@@ -3,44 +3,49 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="" >
-        <img class="page-header__logo--img" src="https://via.placeholder.com/150x150" alt="Логотип сайта фотоприложения «Пинк»">
-      </a>
-      <!-- Main-nav - Меню навигации -->
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button" >Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a>Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="" >
+          <img class="page-header__logo--img" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип сайта фотоприложения «Пинк»">
+        </a>
+
+        <!-- Main-nav - Меню навигации -->
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button" >Открыть меню</button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a>Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a href="photo.html">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
 
       <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+
       <!-- Profile - Анкета участника конкурса -->P
       <section class="profile">
         <h2 class="visually-hidden">Анкета участника конкурса</h2>
 
         <form class="profile__form" action="https://echo.htmlacademy.ru" method="GET">
           <p class="profile__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
-          </p>  
+          </p>
           <fieldset class="profile__item user-info">
             <legend class="visually-hidden">Напишете как вас зовут</legend>
             <p class="user-info__item">
@@ -51,7 +56,7 @@
               <label for="user-name">Имя:</label>
               <input id="user-name" type="text" name="name" placeholder="Введите ваше имя *" required>
             </p>
-            <p class="user-info__item">  
+            <p class="user-info__item">
               <label for="user-patronym">Отчество:</label>
               <input id="user-patronym" type="text" name="patronym" placeholder="Ну и отчество тоже">
             </p>
@@ -129,8 +134,8 @@
           </p>
         </form>
       </section>
-
     </main>
+
     <!-- Footer - Подвал -->
     <footer class="page-footer">
       <div class="page-footer__wrapper">

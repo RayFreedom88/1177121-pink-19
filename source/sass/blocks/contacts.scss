@@ -1,0 +1,27 @@
+/* index.html/contacts.scss */
+
+.contacts {
+  text-align: center;
+}
+
+.contacts__title {
+  font-size: 24px;
+  font-weight: 300;
+  color: #283645;
+  text-transform: uppercase;
+}
+
+.contacts__text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.contacts__phone,
+.contacts__email,
+.contacts__adress {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 40px;
+  color: #d22856;
+}

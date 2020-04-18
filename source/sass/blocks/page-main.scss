@@ -1,0 +1,23 @@
+/* page-main */
+
+.page-main {
+  width: 320px;
+  margin: 0 auto;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 -60px;
+}
+
+.page-main__title {
+  font-size: 24px;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 35px;
+  padding-left: 76px;
+  padding-right: 76px;
+  padding-bottom: 70px;
+}

@@ -3,90 +3,98 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="" >
-        <img class="page-header__logo--img" src="https://via.placeholder.com/150x150" alt="Логотип сайта фотоприложения «Пинк»">
-      </a>
-      <!-- Main-nav - Меню навигации -->
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button" >Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="" >
+          <img class="page-header__logo--img" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип сайта фотоприложения «Пинк»">
+        </a>
+
+        <!-- Main-nav - Меню навигации -->
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button" >Открыть меню</button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a>Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a href="photo.html">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
 
       <h1 class="visually-hidden">Сайт фотоприложения «Пинк» для раскрашивания серых будней</h1>
+
       <!-- Intro -->
       <section class="intro">
         <h2 class="visually-hidden">Скачать приложение</h2>
 
-        <p class="intro__slogan">Взгляните на жизнь иначе!</p>
-        <a class="intro__download button" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
+        <div class="intro__wrapper">
+          <p class="intro__slogan">Взгляните на жизнь иначе!</p>
+          <a class="intro__download button" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
 
-        <ul class="intro__list">
-          <li class="intro__item">
-            <a href="https://www.apple.com/ru/ios/app-store/">
-              <img src="https://via.placeholder.com/150x150" width="47" height="56" alt="Логотип Apple">
-            </a>
-          </li>
-          <li class="intro__item">
-            <a href="https://play.google.com/store/apps?hl=ru">
-              <img src="https://via.placeholder.com/150x150" width="43" height="47" alt="Логотип Android">
-            </a>
-          </li>
-          <li class="intro__item">
-            <a href="https://www.microsoft.com/ru-RU/store/apps">
-              <img src="https://via.placeholder.com/150x150" width="44" height="41" alt="Логотип Windows">
-            </a>
-          </li>
-        </ul>
+          <ul class="intro__list">
+            <li class="intro__item">
+              <a href="https://www.apple.com/ru/ios/app-store/">
+                <img src="img/logo-apple.svg" width="47" height="56" alt="Логотип Apple">
+              </a>
+            </li>
+            <li class="intro__item">
+              <a href="https://play.google.com/store/apps?hl=ru">
+                <img src="img/logo-android.svg" width="43" height="47" alt="Логотип Android">
+              </a>
+            </li>
+            <li class="intro__item">
+              <a href="https://www.microsoft.com/ru-RU/store/apps">
+                <img src="img/logo-microsoft.svg" width="44" height="41" alt="Логотип Windows">
+              </a>
+            </li>
+          </ul>
 
-        <p class="intro__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <p class="intro__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </section>
+
       <!-- Advantage - Преимущества -->
       <section class="advantage">
         <h2 class="visually-hidden">Преимущества</h2>
 
-        <p class="advantage__title">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
+        <p class="advantage__title">Устали от серости мегаполиса?</p>
+        <p class="advantage__subject">Нам есть, что вам предложить!</p>
 
         <ul class="advantage__list">
           <li class="advantage__item">
-            <b class="advantage__title">Поднимаем настроение</b>
+            <b class="advantage__subtitle">Поднимаем настроение</b>
             <p class="advantage__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
           <li class="advantage__item">
-            <b class="advantage__title">Меняет мир вокруг</b>
+            <b class="advantage__subtitle">Меняет мир вокруг</b>
             <p class="advantage__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
           <li class="advantage__item">
-            <b class="advantage__title">Заводит новых друзей</b>
+            <b class="advantage__subtitle">Заводит новых друзей</b>
             <p class="advantage__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-
-        <img src="https://via.placeholder.com/150x150" width="157" height="320" alt="Изображение телефона">
       </section>
+
       <!-- Reviews - Отзывы -->
       <section class="reviews">
-        <h2 class="reviews__title">Отзывы о нас</h2>
+        <h2 class="visually-hidden">Отзывы о нас</h2>
 
         <div class="reviews__wrapper slider">
           <div class="reviews__list  slider__list">
@@ -102,16 +110,17 @@
           <button class="slider__toggle" type="button">3</button>
         </p>
       </section>
+
       <!-- Prices - Прайс -->
       <section class="prices">
         <h2 class="visually-hidden">Прайс приложения Pink</h2>
 
         <div class="prices__wraper slider">
           <table class="prices__table prices-list">
-            <tr class="prices-list__title">
-              <th>База 1,99 USD</th>
-              <th class="prices-list__title--hit">Стандарт 3,99 USD</th>
-              <th>Анлим 9,99 USD</th>
+            <tr class="prices-list__item">
+              <th class="prices-list__title">База 1,99 USD</th>
+              <th class="prices-list__title prices-list__title--hit">Стандарт 3,99 USD</th>
+              <th class="prices-list__title">Анлим 9,99 USD</th>
             </tr>
             <tr class="prices-list__item">
               <td class="prices-list__cell prices-list__cell--no">Розовый фильтр</td>
@@ -136,6 +145,7 @@
           </p>
         </div>
       </section>
+
       <!-- Feedback - Обратная связь -->
       <section class="feedback">
         <div class="feedback__wrapper">
@@ -153,7 +163,7 @@
           <iframe class="feedback__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.320858716385143!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1582307010902!5m2!1sru!2sru" height="100" allowfullscreen="" title="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
           </iframe>
         </div>
-      </section>  
+      </section>
     </main>
   </body>
 </html>

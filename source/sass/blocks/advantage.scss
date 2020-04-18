@@ -1,0 +1,50 @@
+/* index.html/advantage.scss - Преимущества */
+
+.advantage {
+  text-align: center;
+  background-color: $bg-lightgrey;
+  background-image: url(../../img/iphone-screen-mobile@1x.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+  margin: 0 auto;
+}
+
+.advantage__title,
+.advantage__subject {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #283645;
+  background-color: $bg-white;
+}
+
+.advantage__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.advantages__item {
+  padding-left: 34px;
+  padding-right: 34px;
+  padding-top: 39px;
+
+  &:last-child {
+    padding-bottom: 322px;
+  }
+}
+
+.advantage__subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+}
+
+.advantage__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
