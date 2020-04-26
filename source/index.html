@@ -2,13 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo" href="" >
+        <a class="logo" href="" >
           <img class="page-header__logo--img" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип сайта фотоприложения «Пинк»">
         </a>
 
@@ -118,9 +119,18 @@
         <div class="prices__wraper slider">
           <table class="prices__table prices-list">
             <tr class="prices-list__item">
-              <th class="prices-list__title">База 1,99 USD</th>
-              <th class="prices-list__title prices-list__title--hit">Стандарт 3,99 USD</th>
-              <th class="prices-list__title">Анлим 9,99 USD</th>
+              <th class="prices-list__header">
+                <p class="prices-list__title">База</p>
+                <p class="prices-list__cost">1,99 USD</p>
+              </th>
+              <th class="prices-list__header prices-list__header--hit">
+                <p class="prices-list__title">Стандарт</p>
+                <p class="prices-list__cost">3,99 USD</p>
+              </th>
+              <th class="prices-list__header">
+                <p class="prices-list__title">Анлим</p>
+                <p class="prices-list__cost">9,99 USD</p>
+              </th>
             </tr>
             <tr class="prices-list__item">
               <td class="prices-list__cell prices-list__cell--no">Розовый фильтр</td>

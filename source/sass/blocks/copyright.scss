@@ -1,0 +1,33 @@
+/* copyright */
+
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+}
+
+.copyright__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $text-blue;
+  margin-left: 20px;
+}
+
+.copyright__link {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.copyright__img {
+  fill: #d22856;
+}

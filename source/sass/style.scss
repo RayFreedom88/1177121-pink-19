@@ -4,11 +4,17 @@
 @import "../sass/blocks/fonts.scss";
 @import "../sass/blocks/button.scss";
 @import "../sass/variables.scss";
+/* Blocks */
+@import "../sass/blocks/slider.scss";
+// page-header
 @import "../sass/blocks/page-header.scss";
 @import "../sass/blocks/main-nav.scss";
 @import "../sass/blocks/site-list.scss";
 @import "../sass/blocks/page-main.scss";
-@import "../sass/blocks/slider.scss";
+// page-footer
+@import "../sass/blocks/page-footer.scss";
+@import "../sass/blocks/social.scss";
+@import "../sass/blocks/copyright.scss";
 // index.html стили
 @import "../sass/blocks/intro.scss";
 @import "../sass/blocks/advantage.scss";
@@ -21,6 +27,12 @@
 @import "../sass/blocks/gallery.scss";
 @import "../sass/blocks/photo-list.scss";
 @import "../sass/blocks/upload.scss";
+// form.html
+@import "../sass/blocks/profile.scss";
+@import "../sass/blocks/user-info.scss";
+@import "../sass/blocks/filter-input.scss";
+@import "../sass/blocks/user-contacts.scss";
+@import "../sass/blocks/user-comments.scss";
 
 // Общие настройки
 *,
@@ -41,7 +53,8 @@ body {
   color: #000000;
   background-color: $bg-white;
 
-  width: 320px;
+  min-width: 320px;
+
   margin: 0;
   padding: 0;
 }

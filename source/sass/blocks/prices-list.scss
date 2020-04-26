@@ -1,23 +1,70 @@
 /* index.html/prices-list.scss */
 
 .prices-list {
-  width: 840px;
-
   background-color: $bg-lightgrey;
+
+  width: 840px;
 }
 
 .prices-list__item {
   width: 276px;
 }
 
-.prices-list__title {
-  font-weight: 700;
-  color: #ffffff;
+.prices-list__header {
+  color: $text-white;
   text-align: center;
   background-color: $bg-lightblue;
 
   padding-top: 23px;
   padding-bottom: 21px;
+}
+
+.prices-list__header--hit {
+  position: relative;
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+
+  &::before {
+    position: absolute;
+    content: "хит";
+    top: 20px;
+    left: 9px;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    color: $text-white;
+    text-align: center;
+    vertical-align: center;
+    text-transform: uppercase;
+    background-color: $bg-pink;
+
+    height: 10px;
+    width: 28px;
+
+    transform: rotate(-45deg);
+    z-index: 1;
+  }
+}
+
+.prices-list__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  margin: 0;
+  padding: 0;
+}
+
+.prices-list__cost {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  margin: 0;
+  padding: 0;
 }
 
 .prices-list__cell {

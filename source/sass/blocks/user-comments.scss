@@ -1,0 +1,53 @@
+/* form.html/user-comments.scss */
+
+.user-comments {
+  width: 320px;
+
+  margin: 0 auto;
+}
+
+.user-comments__item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: $text-pink;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.user-comments__label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: $text-pink;
+  text-align: center;
+}
+
+.user-comments__textarea {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  border: 2px solid $bc-grey;
+
+  width: 100%;
+
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+
+  &::placeholder {
+    color: $text-blue;
+  }
+
+  &:hover {
+    border-color: $bc-blue;
+  }
+
+  &:focus {
+    border-color: $bc-pink;
+  }
+
+  &:active {
+    border-color: $bc-pink;
+  }
+}
