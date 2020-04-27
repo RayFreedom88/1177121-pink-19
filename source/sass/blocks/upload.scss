@@ -1,8 +1,9 @@
-/* photo.html/upload.scss */
+/* upload */
 
 .upload {
-  padding-top: 20px;
-  background-color: $bg-lightgrey;
+  width: 100%;
+
+  background-color: $lightgrey;
 }
 
 .upload__form {
@@ -11,8 +12,11 @@
   flex-wrap: wrap;
   align-items: center;
 
-  margin: 0;
+  width: 320px;
+
+  margin: 0 auto;
   padding: 0;
+  padding-top: 20px;
 }
 
 .upload__icon {
@@ -71,7 +75,8 @@
 }
 
 .upload__button-wrapper {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
 
   padding-top: 30px;
 }
@@ -82,35 +87,35 @@
 }
 
 .upload__button--submit {
-  color: $text-pink;
-  border-color: $bg-pink;
+  color: $pink;
+  border-color: $pink;
 
   margin-top: 30px;
 
   &:hover {
-    color: $text-white;
-    background-color: $bg-pink;
+    color: $white;
+    background-color: $pink;
   }
 
   &:active {
-    color: rgba($text-white, 0.3);
+    color: rgba($white, 0.3);
   }
 }
 
 .upload__button--сancel {
-  color: rgba($text-blue, 0.1);
-  border-color: rgba($bc-blue, 0.1);
+  color: rgba($blue, 0.1);
+  border-color: rgba($blue, 0.1);
 
   margin-bottom: 41px;
 
   &:hover {
-    color: rgba($text-blue, 0.3);
-    border-color: rgba($bc-blue, 0.3);
+    color: rgba($blue, 0.3);
+    border-color: rgba($blue, 0.3);
   }
 
   &:active {
-    color: rgba($text-white, 0.3);
+    color: rgba($white, 0.3);
     border-color: transparent;
-    background-color: rgba($bg-lightblue, 0.3);
+    background-color: rgba($blue, 0.3);
   }
 }

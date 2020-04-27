@@ -1,7 +1,7 @@
-/* photo.html/gallery.scss */
+/* gallery */
 
 .gallery {
-  background-color: $bg-white;
+  background-color: $white;
 }
 
 .gallery__wrapper {
@@ -19,7 +19,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
-  color: #283645;
+  color: $blue;
   text-align: center;
 
   width: 255px;

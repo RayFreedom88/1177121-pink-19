@@ -1,9 +1,13 @@
-/* index.html/reviews.scss - Отзывы */
+/* reviews - Отзывы */
 
 .reviews {
   text-align: center;
+  background-color: $white;
+
+  width: 100%;
 
   margin: 0 auto;
+  padding-bottom: 40px;
 }
 
 .reviews__wrapper {
@@ -25,12 +29,16 @@
   font-weight: 700;
   font-style: normal;
   line-height: 30px;
-  color: #000000;
+  color: $black;
 }
 
 .reviews__text {
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
-  color: #283645;
+  color: $blue;
+}
+
+.reviews__toggles {
+  margin: 0;
 }

@@ -1,4 +1,4 @@
-/* index.html/contacts.scss */
+/* contacts */
 
 .contacts {
   text-align: center;
@@ -7,7 +7,7 @@
 .contacts__title {
   font-size: 24px;
   font-weight: 300;
-  color: #283645;
+  color: $blue;
   text-transform: uppercase;
 }
 
@@ -15,13 +15,16 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
+
+  width: 280px;
+
+  margin: 0 auto;
 }
 
-.contacts__phone,
-.contacts__email,
-.contacts__adress {
+.contacts__info {
   font-size: 24px;
   font-weight: 300;
   line-height: 40px;
-  color: #d22856;
+  color: $pink;
+  text-decoration: none;
 }

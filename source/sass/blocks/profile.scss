@@ -1,7 +1,9 @@
-/* form.html/profile */
+/* profile */
 
 .profile {
-  background-color: $bg-white;
+  width: 100%;
+
+  background-color: $white;
 }
 
 .profile__form {
@@ -9,6 +11,14 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+
+  margin: 0 auto;
+}
+
+.profile__wrapper {
+  background-color: $lightgrey;
+
+  width: 100%;
 
   margin: 0 auto;
 }
@@ -23,18 +33,20 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  color: $text-pink;
+  color: $pink;
   text-align: center;
   text-transform: uppercase;
 
   width: 220px;
+
+  padding-top: 40px;
 }
 
 .profile__text {
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
-  color: $text-blue;
+  color: $blue;
   text-align: center;
 
   width: 280px;
@@ -50,9 +62,9 @@
   line-height: 30px;
   text-align: center;
   vertical-align: middle;
-  color: $text-white;
+  color: $white;
   text-transform: uppercase;
-  background-color: $bg-green;
+  background-color: $green;
   border: none;
   border-radius: 2px;
 }
@@ -65,5 +77,5 @@
 }
 
 .profile__star {
-  color: $text-pink;
+  color: $pink;
 }

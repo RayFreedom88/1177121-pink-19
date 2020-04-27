@@ -1,7 +1,7 @@
-/* index.html/prices-list.scss */
+/* prices-list */
 
 .prices-list {
-  background-color: $bg-lightgrey;
+  background-color: $lightgrey;
 
   width: 840px;
 }
@@ -11,9 +11,9 @@
 }
 
 .prices-list__header {
-  color: $text-white;
+  color: $white;
   text-align: center;
-  background-color: $bg-lightblue;
+  background-color: $blue;
 
   padding-top: 23px;
   padding-bottom: 21px;
@@ -33,11 +33,11 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 14px;
-    color: $text-white;
+    color: $white;
     text-align: center;
     vertical-align: center;
     text-transform: uppercase;
-    background-color: $bg-pink;
+    background-color: $pink;
 
     height: 10px;
     width: 28px;
@@ -71,7 +71,7 @@
   font-size: 14px;
   text-transform: uppercase;
   text-align: left;
-  background-color: $bg-white;
+  background-color: $white;
 
   padding-top: 22px;
   padding-left: 20px;
