@@ -1,0 +1,121 @@
+/* upload */
+
+.upload {
+  width: 100%;
+
+  background-color: $lightgrey;
+}
+
+.upload__form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+
+  width: 320px;
+
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 20px;
+}
+
+.upload__icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 238px;
+
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.upload__crop,
+.upload__fill,
+.upload__contrast {
+  display: block;
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+  cursor: pointer;
+
+  width: 48px;
+  height: 48px;
+}
+
+.upload__crop {
+  background-image: url(../img/icon-editor-crop.svg);
+
+  &--active {
+    background-image: url(../img/icon-editor-crop-on.svg);
+  }
+}
+
+.upload__fill {
+  background-image: url(../img/icon-editor-fill.svg);
+}
+
+.upload__contrast {
+  background-image: url(../img/icon-editor-contrast.svg);
+}
+
+.upload__item-range {
+  display: none;
+
+  &--active {
+    display: block;
+
+    width: 238px;
+
+    margin: 0 auto;
+  }
+}
+
+.upload__button-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 30px;
+}
+
+.upload__button {
+  min-width: 280px;
+  margin: 6px 0;
+}
+
+.upload__button--submit {
+  color: $pink;
+  border-color: $pink;
+
+  margin-top: 30px;
+
+  &:hover {
+    color: $white;
+    background-color: $pink;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
+}
+
+.upload__button--сancel {
+  color: rgba($blue, 0.1);
+  border-color: rgba($blue, 0.1);
+
+  margin-bottom: 41px;
+
+  &:hover {
+    color: rgba($blue, 0.3);
+    border-color: rgba($blue, 0.3);
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+    border-color: transparent;
+    background-color: rgba($blue, 0.3);
+  }
+}

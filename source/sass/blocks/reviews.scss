@@ -1,0 +1,44 @@
+/* reviews - Отзывы */
+
+.reviews {
+  text-align: center;
+  background-color: $white;
+
+  width: 100%;
+
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.reviews__wrapper {
+  width: 320px;
+
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 34px;
+}
+
+.reviews__item {
+  margin: 0;
+  padding: 0;
+}
+
+.reviews__author-name {
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 30px;
+  color: $black;
+}
+
+.reviews__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: $blue;
+}
+
+.reviews__toggles {
+  margin: 0;
+}

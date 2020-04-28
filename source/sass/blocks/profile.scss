@@ -1,0 +1,81 @@
+/* profile */
+
+.profile {
+  width: 100%;
+
+  background-color: $white;
+}
+
+.profile__form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+
+  margin: 0 auto;
+}
+
+.profile__wrapper {
+  background-color: $lightgrey;
+
+  width: 100%;
+
+  margin: 0 auto;
+}
+
+.profile__item {
+  border-style: none;
+
+  padding-bottom: 44px;
+}
+
+.profile__legend {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $pink;
+  text-align: center;
+  text-transform: uppercase;
+
+  width: 220px;
+
+  padding-top: 40px;
+}
+
+.profile__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: $blue;
+  text-align: center;
+
+  width: 280px;
+
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.profile__button {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  color: $white;
+  text-transform: uppercase;
+  background-color: $green;
+  border: none;
+  border-radius: 2px;
+}
+
+.profile__important {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.profile__star {
+  color: $pink;
+}

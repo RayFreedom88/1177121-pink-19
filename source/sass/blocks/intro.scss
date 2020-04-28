@@ -1,0 +1,36 @@
+/* intro */
+
+.intro {
+  width: 100%;
+
+  background-color: $darkblue;
+}
+
+.intro__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 320px;
+
+  margin: 0 auto;
+  padding-top: 28px;
+}
+
+.intro__list {
+  display: flex;
+
+  justify-content: space-between;
+
+  width: 205px;
+
+  list-style: none;
+}
+
+.intro__desc {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  color: $white;
+  text-align: center;
+}

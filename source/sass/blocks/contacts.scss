@@ -1,0 +1,30 @@
+/* contacts */
+
+.contacts {
+  text-align: center;
+}
+
+.contacts__title {
+  font-size: 24px;
+  font-weight: 300;
+  color: $blue;
+  text-transform: uppercase;
+}
+
+.contacts__text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+
+  width: 280px;
+
+  margin: 0 auto;
+}
+
+.contacts__info {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 40px;
+  color: $pink;
+  text-decoration: none;
+}

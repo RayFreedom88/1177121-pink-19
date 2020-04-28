@@ -1,0 +1,67 @@
+/* advantage - Преимущества */
+
+.advantage {
+  background-color: $lightgrey;
+  text-align: center;
+
+  width: 100%;
+}
+
+.advantage__wrapper {
+  background-color: $white;
+
+  margin: 0 auto;
+}
+
+.advantage__title,
+.advantage__subject {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  color: $blue;
+
+  width: 220px;
+
+  margin: 0 auto;
+}
+
+.advantage__list {
+  width: 320px;
+
+  margin: 0 auto;
+  padding: 0;
+
+  list-style: none;
+}
+
+.advantage__item {
+  padding-left: 34px;
+  padding-right: 34px;
+  padding-top: 39px;
+
+  &:last-child {
+    background-image: url(../img/iphone-screen-mobile@1x.png);
+    background-position: bottom -45px center;
+    background-repeat: no-repeat;
+
+    padding-bottom: 322px;
+  }
+}
+
+.advantage__subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $black;
+}
+
+.advantage__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+
+  width: 260px;
+
+  margin: 0;
+  padding-top: 20px;
+}
