@@ -9,8 +9,6 @@
 
 .advantage__wrapper {
   background-color: $white;
-
-  margin: 0 auto;
 }
 
 .advantage__title,
@@ -23,6 +21,10 @@
   width: 220px;
 
   margin: 0 auto;
+}
+
+.advantage__title {
+  padding-bottom: 35px;
 }
 
 .advantage__list {
