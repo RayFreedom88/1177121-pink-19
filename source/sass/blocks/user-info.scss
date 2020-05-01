@@ -1,7 +1,7 @@
 /* user-info */
 
 .user-info {
-  width: 320px;
+  width: auto;
 }
 .user-info__item {
   font-size: 14px;
@@ -9,6 +9,9 @@
   line-height: 30px;
   color: $pink;
   text-transform: uppercase;
+
+  margin: 0;
+  padding-top: 29px;
 }
 
 .user-info__input {

@@ -5,19 +5,13 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-}
 
-.photo-list__item {
-  padding-bottom: 20px;
-}
-
-.photo-list__item:last-of-type {
-  padding-bottom: 0;
-}
-
-.photo-list__figure {
   margin: 0;
   padding: 0;
+
+  &--top-day {
+    padding-bottom: 20px;
+  }
 }
 
 .photo-list__link {

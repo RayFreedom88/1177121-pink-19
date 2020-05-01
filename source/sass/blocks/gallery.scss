@@ -2,10 +2,12 @@
 
 .gallery {
   background-color: $white;
+
+  width: auto;
 }
 
 .gallery__wrapper {
-  width: 320px;
+  width: auto;
 }
 
 .gallery__list {
@@ -13,6 +15,14 @@
   padding: 0;
 
   list-style: none;
+}
+
+.gallery__item {
+  padding-bottom: 20px;
+}
+
+.gallery__item:last-of-type {
+  padding-bottom: 0;
 }
 
 .gallery__text {
