@@ -1,12 +1,56 @@
 /* main-nav */
 
 .main-nav {
+  position: relative;
+
   background-color: $blue;
 }
 
 .main-nav__list {
+  display: none;
+
   margin: 0;
   padding: 0;
 
   list-style: none;
+
+  &--open {
+    display: block;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: -50px;
+  right: 19px;
+
+  display: block;
+
+  background-color: transparent;
+
+  cursor: pointer;
+  border: none;
+}
+
+.main-nav__burger,
+.main-nav__cross {
+  fill: $white;
+
+  &:hover,
+  &:focus {
+    fill: $pink;
+  }
+
+  &:active {
+    fill: $white;
+    opacity: 0.5;
+  }
+}
+
+.main-nav__toggle--closed .main-nav__burger {
+  display: none;
+}
+
+.main-nav__toggle--opened .main-nav__cross {
+  display: none;
 }

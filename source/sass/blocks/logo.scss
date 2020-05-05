@@ -1,0 +1,22 @@
+/* logo - логотип */
+
+.logo {
+  width: auto;
+
+  fill: $white;
+
+  &:hover[href],
+  &:focus[href] {
+    fill: $pink;
+  }
+
+  &:active[href] {
+    fill: $white;
+    opacity: 0.5;
+  }
+}
+
+.logo__svg {
+  width: 75px;
+  height: 22px;
+}

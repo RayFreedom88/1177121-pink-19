@@ -1,5 +1,8 @@
 /* Variables */
 
+// font-family
+$open-sans: "Open Sans", "Arial", sans-serif;
+
 // main-color
 $black: #000000;
 $darkblue: #1d2631;
@@ -10,5 +13,6 @@ $grey: #b5b9be;
 $pink: #d22856;
 $green: #2aab6d;
 
-// font-family
-$open-sans: "Open Sans", "Arial", sans-serif;
+// breakpoints
+$tablet-width: 660px;
+$desktop-width: 1200px;
