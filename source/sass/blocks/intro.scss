@@ -36,3 +36,38 @@
   color: $white;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .intro {
+    position: relative;
+    top: -306px;
+
+    background-color: transparent;
+  }
+
+  .intro__wrapper {
+    margin-top: -28px;
+    margin-left: -316px;
+  }
+
+  .intro__download {
+    padding: 14px 42px;
+  }
+
+  .intro__list {
+    padding-top: 50px;
+  }
+
+  .intro__desc {
+    width: 300px;
+
+    margin: 0;
+    padding-top: 26px;
+
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+}

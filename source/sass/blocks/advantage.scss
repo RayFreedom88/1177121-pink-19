@@ -66,3 +66,13 @@
   margin: 0 auto;
   padding-top: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .advantage__wrapper {
+    margin-top: -239px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+}
