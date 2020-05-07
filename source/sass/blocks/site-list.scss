@@ -49,3 +49,19 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .site-list__item {
+    box-shadow: none;
+
+    &:first-of-type {
+      box-shadow: none;
+    }
+  }
+
+  .site-list__link {
+    font-weight: 300;
+    line-height: 18px;
+    text-transform: none;
+  }
+}

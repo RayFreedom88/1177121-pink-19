@@ -2,8 +2,6 @@
 
 .main-nav {
   position: relative;
-
-  background-color: $blue;
 }
 
 .main-nav__list {
@@ -53,4 +51,18 @@
 
 .main-nav__toggle--opened .main-nav__cross {
   display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    // flex-wrap: wrap;
+    justify-content: space-between;
+    width: 620px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }
