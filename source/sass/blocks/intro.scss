@@ -10,8 +10,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
 
-  padding-top: 28px;
+.intro__download {
+  margin-top: 28px;
 }
 
 .intro__list {
@@ -39,18 +41,15 @@
 
 @media (min-width: $tablet-width) {
   .intro {
-    position: relative;
-    top: -306px;
-
     background-color: transparent;
   }
 
   .intro__wrapper {
-    margin-top: -28px;
-    margin-left: -316px;
+    padding: 0;
   }
 
   .intro__download {
+    margin-top: 0;
     padding: 14px 42px;
   }
 
@@ -62,12 +61,24 @@
     width: 300px;
 
     margin: 0;
-    padding-top: 26px;
+    padding-top: 32px;
 
     font-size: 18px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .intro__download {
+    padding: 14px 25px;
 
+    font-size: 21px;
+  }
+
+  .intro__list {
+    padding-top: 73px;
+  }
+
+  .intro__desc {
+    padding-top: 47px;
+  }
 }
