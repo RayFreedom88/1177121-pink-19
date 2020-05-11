@@ -4,6 +4,10 @@
   width: auto;
 
   margin: 40px auto;
+
+  &--index {
+    display: none;
+  }
 }
 
 .page-footer__wrapper {
@@ -19,4 +23,36 @@
 
 .page-footer__social {
   margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    width: auto;
+
+    margin: 40px auto;
+
+    &--index {
+      display: block;
+    }
+  }
+
+  .page-footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .page-footer__logo {
+    margin: 0;
+  }
+
+  .page-footer__social {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    margin: 85px auto;
+  }
 }
