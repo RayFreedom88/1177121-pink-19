@@ -40,6 +40,16 @@
   padding-top: 30px;
 }
 
+.page-main__reviews {
+  margin: 0;
+  padding-top: 34px;
+}
+
+.page-main__prices {
+  padding-top: 130px;
+  padding-bottom: 50px;
+}
+
 @media (min-width: $tablet-width) {
   .page-main {
     margin-top: -110px;
@@ -63,6 +73,11 @@
     margin-top: 0;
     margin-bottom: 108px;
     padding-right: 325px;
+  }
+
+  .page-main__prices {
+    padding-top: 110px;
+    padding-bottom: 70px;
   }
 }
 
@@ -91,5 +106,15 @@
 
   .page-main__advantage {
     padding-top: 70px;
+    padding-bottom: 67px;
+  }
+
+  .page-main__reviews {
+    padding-top: 72px;
+  }
+
+  .page-main__prices {
+    padding-top: 190px;
+    padding-bottom: 97px;
   }
 }
