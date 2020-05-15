@@ -101,28 +101,34 @@
     </header>
 
     <main class="page-main">
-
-      <h1 class="page-main__title">Фотографии пользователей</h1>
+      <div class="container">
+        <h1 class="page-main__title">Фотографии пользователей</h1>
+      </div>
 
       <!-- gallery - Фотогалерея -->
       <section class="gallery">
         <h2 class="visually-hidden">Фотогалерея</h2>
 
-        <div class="gallery__wrapper">
-          <p class="gallery__text">Взгляните на фотографии, которые выкладывают пользователи!
-            Видите, как не хватает ваших?</p>
+        <div class="container">
+          <p class="gallery__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         </div>
 
-        <figure class="photo-list photo-list--top-day">
+        <figure class="photo-list photo-list--panorama">
           <a class="photo-list__link" href="">
             <span class="photo-list__ticket">Панорама дня</span>
-            <img class="photo-list__img--top-day" src="img/gallery/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня от Анны">
+            <picture class="photo-list__picture">
+              <source media="(min-width: 960px)" srcset="img/gallery/panorama-desktop@1x.jpg, img/gallery/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/gallery/panorama-tablet@1x.jpg, img/gallery/panorama-tablet@2x.jpg 2x">
+              <img class="photo-list__img photo-list__img--panorama" src="img/gallery/panorama-mobile@1x.jpg" srcset="img/gallery/panorama-mobile@2x.jpg 2x" alt="Панорама дня от Анны" width="320" height="137">
+            </picture>
           </a>
-          <figcaption class="photo-list__figcaption">
-            <span class="photo-list__author-name">Анна <time class="photo-list__time">(5 минут назад)</time></span>
-            <p class="photo-list__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <button class="photo-list__heart" type="button"><span class="likes-number">Нравится: 215</span></button>
-          </figcaption>
+          <div class="container">
+            <figcaption class="photo-list__figcaption photo-list__figcaption--panorama">
+              <span class="photo-list__author-name">Анна <time class="photo-list__time">(5 минут назад)</time></span>
+              <p class="photo-list__text photo-list__text--panorama">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <button class="photo-list__heart" type="button"><span class="likes-number">Нравится: 215</span></button>
+            </figcaption>
+          </div>
         </figure>
 
         <div class="container">
@@ -130,7 +136,11 @@
             <li class="gallery__item">
               <figure class="photo-list">
                 <a class="photo-list__link" href="">
-                  <img class="photo-list__img" src="img/gallery/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото от Левона">
+                  <picture class="photo-list__picture">
+                    <source media="(min-width: 960px)" srcset="img/gallery/photo-car-desktop@1x.jpg, img/gallery/photo-car-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/gallery/photo-car-tablet@1x.jpg, img/gallery/photo-car-tablet@2x.jpg 2x">
+                    <img class="photo-list__img" src="img/gallery/photo-car-mobile@1x.jpg" srcset="img/gallery/photo-car-mobile@2x.jpg 2x" alt="Фото от Левона" width="280" height="180">
+                  </picture>
                 </a>
                 <figcaption class="photo-list__figcaption">
                   <span class="photo-list__author-name">Левон <time class="photo-list__time">(5 часов назад)</time></span>
@@ -142,7 +152,11 @@
             <li class="gallery__item">
               <figure class="photo-list">
                 <a class="photo-list__link" href="">
-                  <img class="photo-list__img" src="img/gallery/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото от Антона">
+                  <picture class="photo-list__picture">
+                    <source media="(min-width: 960px)" srcset="img/gallery/photo-drumset-desktop@1x.jpg, img/gallery/photo-drumset-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/gallery/photo-drumset-tablet@1x.jpg, img/gallery/photo-drumset-tablet@2x.jpg 2x">
+                    <img class="photo-list__img" src="img/gallery/photo-drumset-mobile@1x.jpg" srcset="img/gallery/photo-drumset-mobile@2x.jpg 2x" alt="Фото от Антона" width="280" height="180">
+                  </picture>
                 </a>
                 <figcaption class="photo-list__figcaption">
                   <span class="photo-list__author-name">Антон <time class="photo-list__time">(12 часов назад)</time></span>
@@ -154,7 +168,11 @@
             <li class="gallery__item">
               <figure class="photo-list">
                 <a class="photo-list__link" href="">
-                  <img class="photo-list__img" src="img/gallery/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото от Бориса">
+                  <picture class="photo-list__picture">
+                    <source media="(min-width: 960px)" srcset="img/gallery/photo-window-desktop@1x.jpg, img/gallery/photo-window-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/gallery/photo-window-tablet@1x.jpg, img/gallery/photo-window-tablet@2x.jpg 2x">
+                    <img class="photo-list__img" src="img/gallery/photo-window-mobile@1x.jpg" srcset="img/gallery/photo-window-mobile@2x.jpg 2x" alt="Фото от Бориса" width="280" height="180">
+                  </picture>
                 </a>
                 <figcaption class="photo-list__figcaption">
                   <span class="photo-list__author-name">Борис <time class="photo-list__time">(20 часов назад)</time></span>
@@ -166,7 +184,11 @@
             <li class="gallery__item">
               <figure class="photo-list">
                 <a class="photo-list__link" href="">
-                  <img class="photo-list__img" src="img/gallery/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото от Сергея">
+                  <picture class="photo-list__picture">
+                    <source media="(min-width: 960px)" srcset="img/gallery/photo-fair-desktop@1x.jpg, img/gallery/photo-fair-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/gallery/photo-fair-tablet@1x.jpg, img/gallery/photo-fair-tablet@2x.jpg 2x">
+                    <img class="photo-list__img" src="img/gallery/photo-fair-mobile@1x.jpg" srcset="img/gallery/photo-fair-mobile@2x.jpg 2x" alt="Фото от Сергея" width="280" height="180">
+                  </picture>
                 </a>
                 <figcaption class="photo-list__figcaption">
                   <span class="photo-list__author-name">Сергей <time class="photo-list__time">(25 часов назад)</time></span>
@@ -178,7 +200,11 @@
             <li class="gallery__item">
               <figure class="photo-list">
                 <a class="photo-list__link" href="">
-                  <img class="photo-list__img" src="img/gallery/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото от Максима">
+                  <picture class="photo-list__picture">
+                    <source media="(min-width: 960px)" srcset="img/gallery/photo-pov-desktop@1x.jpg, img/gallery/photo-pov-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/gallery/photo-pov-tablet@1x.jpg, img/gallery/photo-pov-tablet@2x.jpg 2x">
+                    <img class="photo-list__img" src="img/gallery/photo-pov-mobile@1x.jpg" srcset="img/gallery/photo-pov-mobile@2x.jpg 2x" alt="Фото от Максима" width="280" height="180">
+                  </picture>
                 </a>
                 <figcaption class="photo-list__figcaption">
                   <span class="photo-list__author-name">Максим <time class="photo-list__time">(40 часов назад)</time></span>
@@ -190,7 +216,11 @@
             <li class="gallery__item">
               <figure class="photo-list">
                 <a class="photo-list__link" href="">
-                  <img class="photo-list__img" src="img/gallery/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото от Надежды">
+                  <picture class="photo-list__picture">
+                    <source media="(min-width: 960px)" srcset="img/gallery/photo-wing-desktop@1x.jpg, img/gallery/photo-wing-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/gallery/photo-wing-tablet@1x.jpg, img/gallery/photo-wing-tablet@2x.jpg 2x">
+                    <img class="photo-list__img" src="img/gallery/photo-wing-mobile@1x.jpg" srcset="img/gallery/photo-wing-mobile@2x.jpg 2x" alt="Фото от Надежды" width="280" height="180">
+                  </picture>
                 </a>
                 <figcaption class="photo-list__figcaption">
                   <span class="photo-list__author-name">Надежда <time class="photo-list__time">(45 часов назад)</time></span>
@@ -206,7 +236,7 @@
       </section>
 
       <!-- Upload - Загрузить фотографии -->
-      <section class="upload">
+      <section class="page-main__upload upload">
         <h2 class="visually-hidden">Загрузить фотографию</h2>
 
         <div class="container">

@@ -13,7 +13,6 @@
   align-items: center;
 
   padding: 0;
-  padding-top: 20px;
 }
 
 .upload__icon {
@@ -80,14 +79,13 @@
 
 .upload__button {
   min-width: 280px;
+  margin: 0;
   margin: 6px 0;
 }
 
 .upload__button--submit {
   color: $pink;
   border-color: $pink;
-
-  margin-top: 30px;
 
   &:hover {
     color: $white;
@@ -102,8 +100,6 @@
 .upload__button--сancel {
   color: rgba($blue, 0.1);
   border-color: rgba($blue, 0.1);
-
-  margin-bottom: 41px;
 
   &:hover {
     color: rgba($blue, 0.3);
