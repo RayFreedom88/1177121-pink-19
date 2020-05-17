@@ -3,7 +3,7 @@
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-repeat:no-repeat;
   background-position:top center;
-  background-color: $blue;
+  background-color: $white;
 
   width: 100%;
 
@@ -111,6 +111,11 @@
     padding-top: 110px;
     padding-bottom: 70px;
   }
+
+  .page-main__upload {
+    padding-top: 57px;
+    padding-bottom: 54px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -157,5 +162,9 @@
   .page-main__prices {
     padding-top: 190px;
     padding-bottom: 97px;
+  }
+
+  .page-main__upload {
+    margin: 0 auto;
   }
 }
