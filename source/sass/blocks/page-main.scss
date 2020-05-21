@@ -1,23 +1,27 @@
 /* page-main */
-
 .page-main {
   background-image: url(../img/bg-back-mobile@1x.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-color: $blue;
+  background-repeat:no-repeat;
+  background-position:top center;
+  background-color: $white;
 
   width: 100%;
 
   margin: 0;
+  margin-top: -66px;
   padding: 0;
-}
+  padding-top: 66px;
 
-.page-main__wrapper {
-  background-image: url(../img/iphone-hand-mobile@1x.png);
-  background-repeat: no-repeat;
-  background-position: center 115px;
+  &--index {
+    background-image: url(../img/iphone-hand-mobile@1x.png), url(../img/bg-back-mobile@1x.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 176px, top center;
 
-  height: 386px;
+    margin: 0;
+    margin-top: -66px;
+    padding: 0;
+    padding-top: 66px;
+  }
 }
 
 .page-main__title {
@@ -26,9 +30,169 @@
   color: $white;
   text-align: center;
 
-  width: 230px;
-
   margin: 0 auto;
   padding: 0;
-  padding-top: 35px;
+  padding-top: 31px;
+  padding-bottom: 86px;
+
+  &--index {
+    width: 230px;
+
+    padding-top: 22px;
+    padding-bottom: 35px;
+  }
+
+  &--form {
+    padding-top: 37px;
+    padding-bottom: 55px;
+  }
+}
+
+/* blocks */
+
+// index.html
+.page-main__intro {
+  margin-top: 285px;
+}
+
+.page-main__advantage {
+  padding-top: 30px;
+}
+
+.page-main__reviews {
+  margin: 0;
+  padding-top: 34px;
+}
+
+.page-main__prices {
+  padding-top: 130px;
+  padding-bottom: 50px;
+}
+
+.page-main__feedback {
+  padding-top: 50px;
+}
+
+// gallery.html
+.page-main__gallery {
+  margin: 0;
+  padding: 0;
+}
+
+.page-main__upload {
+  padding-top: 20px;
+  padding-bottom: 41px;
+}
+
+// form.html
+.page-main__profile {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    margin-top: -110px;
+    padding-top: 110px;
+
+    background-position: top center;
+    background-image: url(../img/bg-back-tablet@1x.jpg);
+
+    &--index {
+      margin-top: -110px;
+      padding-top: 110px;
+
+      background-position: center 183px,top center;
+      background-image: url(../img/iphone-hand-tablet@1x.png),url(../img/bg-back-tablet@1x.jpg);
+    }
+  }
+// изменения
+  .page-main__title {
+    padding-top: 72px;
+    padding-bottom: 145px;
+    font-size: 50px;
+
+    &--index {
+      font-size: 40px;
+
+      margin-left: 34px;
+      padding-top: 94px;
+      padding-bottom: 35px;
+    }
+
+    &--form {
+      padding-bottom: 90px;
+    }
+  }
+
+  .page-main__intro {
+    margin-top: 0;
+    margin-bottom: 108px;
+    padding-right: 325px;
+  }
+
+  .page-main__prices {
+    padding-top: 110px;
+    padding-bottom: 70px;
+  }
+
+  .page-main__upload {
+    padding-top: 57px;
+    padding-bottom: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    background-image: url(../img/bg-back-desktop@1x.jpg);
+    background-position: top center;
+
+    &--index {
+      background-image: url(../img/iphone-hand-desktop@1x.png), url(../img/bg-back-desktop@1x.jpg);
+      background-position: 136px 194px,top center;
+    }
+  }
+
+  .page-main__title {
+    width: 365px;
+
+    padding-top: 65px;
+    padding-bottom: 105px;
+
+    &--index {
+      font-size: 50px;
+
+      width: 270px;
+
+      padding-top: 109px;
+      padding-bottom: 60px;
+      margin-left: 14px;
+    }
+
+    &--form {
+      width: 750px;
+    }
+  }
+
+  .page-main__intro {
+    padding-right: 647px;
+  }
+
+  .page-main__advantage {
+    padding-top: 70px;
+    padding-bottom: 67px;
+  }
+
+  .page-main__reviews {
+    padding-top: 72px;
+  }
+
+  .page-main__prices {
+    padding-top: 190px;
+    padding-bottom: 97px;
+  }
+
+  .page-main__upload {
+    margin: 0 auto;
+  }
 }

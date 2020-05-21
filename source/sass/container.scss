@@ -1,5 +1,22 @@
 /* container */
 
 .container {
+  max-width: 320px;
+
   margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    max-width: 660px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    max-width: 960px;
+
+    padding: 0 10px;
+  }
 }

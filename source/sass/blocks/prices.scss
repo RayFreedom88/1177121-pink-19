@@ -1,12 +1,9 @@
 /* prices */
 
 .prices {
-  background-color: $lightgrey;
+  background: linear-gradient(-5deg, $lightgrey 89%, $white 10%);
 
-  width: auto;
-
-  padding-top: 60px;
-  padding-bottom: 40px;
+  width: 100%;
 }
 
 .prices__wraper {
@@ -14,6 +11,16 @@
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+}
 
-  width: 320px;
+@media (min-width: $tablet-width) {
+  .prices {
+    background: linear-gradient(-5deg, $lightgrey 83%, $white 10%);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .prices {
+    background: linear-gradient(-5deg, $lightgrey 79%, $white 10%);
+  }
 }

@@ -3,7 +3,11 @@
 .page-footer {
   width: auto;
 
-  margin: 40px;
+  margin: 40px auto;
+
+  &--index {
+    display: none;
+  }
 }
 
 .page-footer__wrapper {
@@ -11,8 +15,6 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-
-  width: 320px;
 }
 
 .page-footer__logo {
@@ -21,4 +23,38 @@
 
 .page-footer__social {
   margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    width: auto;
+
+    margin: 40px auto;
+
+    &--index {
+      display: block;
+    }
+  }
+
+  .page-footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .page-footer__logo {
+    margin: 0;
+  }
+
+  .page-footer__social {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
 }

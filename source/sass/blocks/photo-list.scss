@@ -5,19 +5,15 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-}
 
-.photo-list__item {
-  padding-bottom: 20px;
-}
-
-.photo-list__item:last-of-type {
-  padding-bottom: 0;
-}
-
-.photo-list__figure {
   margin: 0;
   padding: 0;
+
+  line-height: 0;
+
+  &--top-day {
+    padding-bottom: 20px;
+  }
 }
 
 .photo-list__link {
@@ -45,13 +41,29 @@
   padding-top: 7px;
 }
 
+.photo-list__picture {
+  margin: 0;
+  padding: 0;
+}
+
+.photo-list__img {
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
 .photo-list__figcaption {
+  align-self: stretch;
+
+  margin: 0;
+  padding-top: 18px;
+  padding-left: 18px;
+  padding-right: 10px;
+  padding-bottom: 18px;
+
   background-color: $lightgrey;
-
-  width: 280px;
-
-  margin: 0 auto;
-  padding-top: 20px;
 }
 
 .photo-list__author-name {
@@ -59,8 +71,6 @@
   font-weight: 700;
   line-height: 24px;
   color: $blue;
-
-  padding-left: 20px;
 }
 
 .photo-list__time {
@@ -73,32 +83,30 @@
   font-weight: 400;
   line-height: 24px;
   color: $blue;
-  margin: 0;
-  padding-left: 20px;
-  padding-bottom: 20px;
 
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 .photo-list__heart {
-  position: relative;
-  border: none;
+  display: flex;
+  align-items: center;
 
-  margin-bottom: 24px;
-  padding-left: 50px;
+  padding: 0;
 
   background-color: transparent;
-}
+  border: none;
 
-.photo-list__heart::before {
-  content: "";
-  position: absolute;
-  background-image: url(../img/icon-heart.svg);
+  &::before {
+    content: "";
 
-  top: 7px;
-  left: 18px;
+    width: 13px;
+    height: 12px;
 
-  width: 13px;
-  height: 12px;
+    margin-right: 17px;
+
+    background-image: url(../img/icon-heart.svg);
+  }
 }
 
 .likes-number {
@@ -107,4 +115,57 @@
   line-height: 24px;
   color: $pink;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-list {
+    flex-grow: 1;
+
+    &--panorama {
+      padding-bottom: 50px;
+    }
+  }
+
+  .photo-list__ticket {
+    top: 54px;
+  }
+
+  .photo-list__figcaption {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    padding-left: 33px;
+    padding-right: 34px;
+
+    &--panorama {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  .photo-list__text {
+    flex-grow: 1;
+
+    &--panorama {
+      order: 1;
+    }
+  }
+
+  .photo-list__heart {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    &::before {
+      margin: 0;
+      margin-left: 17px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-list__ticket {
+    right: 130px;
+  }
 }
