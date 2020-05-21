@@ -41,8 +41,16 @@
     padding-top: 22px;
     padding-bottom: 35px;
   }
+
+  &--form {
+    padding-top: 37px;
+    padding-bottom: 55px;
+  }
 }
-//blocks
+
+/* blocks */
+
+// index.html
 .page-main__intro {
   margin-top: 285px;
 }
@@ -65,9 +73,21 @@
   padding-top: 50px;
 }
 
+// gallery.html
+.page-main__gallery {
+  margin: 0;
+  padding: 0;
+}
+
 .page-main__upload {
   padding-top: 20px;
   padding-bottom: 41px;
+}
+
+// form.html
+.page-main__profile {
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -98,6 +118,10 @@
       margin-left: 34px;
       padding-top: 94px;
       padding-bottom: 35px;
+    }
+
+    &--form {
+      padding-bottom: 90px;
     }
   }
 
@@ -143,6 +167,10 @@
       padding-top: 109px;
       padding-bottom: 60px;
       margin-left: 14px;
+    }
+
+    &--form {
+      width: 750px;
     }
   }
 
