@@ -168,7 +168,11 @@
     right: -252px;
   }
 
-  .user-info__input {
+  .user-info__input--phone {
+    width: 371px;
+  }
+
+  .user-info__input--email {
     width: 371px;
   }
 }

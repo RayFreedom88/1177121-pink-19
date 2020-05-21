@@ -17,6 +17,7 @@
 
   margin: 0 auto;
   padding-top: 50px;
+  padding-bottom: 40px;
 
   &--form {
     display: none;
@@ -35,20 +36,48 @@
 .profile__wrapper {
   width: 100%;
 
-  padding-top: 40px;
+  padding: 0;
+
+  &--user {
+    padding-bottom: 40px;
+  }
 
   &--checkbox,
   &--radio {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
     background-color: $lightgrey;
+  }
+
+  &--contacts {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  &--comments {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  &--btn {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
-.profile__user-info,
-.profile__filter-input,
-.profile__user-comments {
+.profile__filter-input {
   margin: 0;
   padding: 0;
-  padding-bottom: 44px;
+  padding-top: 40px;;
+}
+
+.profile__user-comments {
+  padding: 0;
+}
+
+.profile__user-info {
+  padding: 0;
 }
 
 .profile__legend {
@@ -91,6 +120,7 @@
 }
 
 .profile__important {
+  margin: 0;
   margin-top: 44px;
 
   font-size: 14px;
@@ -123,7 +153,21 @@
 
     &--checkbox,
     &--radio {
+      padding-top: 0;
+      padding-bottom: 40px;
+
       background-color: transparent;
+    }
+
+    &--contacts {
+      padding-top: 0;
+    }
+    &--comments {
+      padding-top: 0;
+    }
+
+    &--btn {
+      padding: 0;
     }
   }
 
@@ -213,5 +257,9 @@
     &--btn {
       order: 6;
     }
+  }
+
+  .profile__important {
+    margin: 0;
   }
 }

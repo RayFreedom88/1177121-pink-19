@@ -14,6 +14,7 @@
   margin: 0;
   padding: 0;
 
+
   list-style: none;
 }
 
@@ -34,7 +35,9 @@
   font-weight: 400;
   line-height: 30px;
   color: $blue;
+}
 
+.filter-input__label--checkbox {
   padding-left: 70px;
 
   &::before {
@@ -78,12 +81,55 @@
   }
 }
 
-.filter-input__checkbox:checked + .filter-input__label::after {
+.filter-input__checkbox:checked + .filter-input__label--checkbox::after {
   display: block;
 }
 
-.filter-input__textarea {
-  width: 100%;
+.filter-input__label--radio {
+  padding-left: 70px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+
+    width: 39px;
+    height: 39px;
+
+    border: solid 2px $grey;
+    border-radius: 50%;
+    background-color: $white;
+    transform: translateY(50%);
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border: solid 2px $blue;
+  }
+
+  &:active::before {
+    border: solid 2px $pink;
+  }
+
+  &::after {
+    content: "";
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 12px;
+
+    width: 15px;
+    height: 15px;
+
+    border-radius: 50%;
+    background-color: $pink;
+    transform: translateY(-50%);
+  }
+}
+
+.filter-input__radio:checked + .filter-input__label--radio::after {
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
