@@ -8,7 +8,7 @@
 }
 
 .advantage__wrapper {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .advantage__title,
@@ -23,7 +23,7 @@
 }
 
 .advantage__title {
-  padding-bottom: 35px;
+  padding-bottom: 26px;
 }
 
 .advantage__list {
@@ -40,7 +40,7 @@
 
   &:last-child {
     background-image: url(../img/iphone-screen-mobile@1x.png);
-    background-position: bottom -45px center;
+    background-position: bottom -44px center;
     background-repeat: no-repeat;
 
     padding-bottom: 302px;
@@ -55,8 +55,8 @@
   line-height: 24px;
   color: $black;
 
-  margin-top: 27px;
-  margin-bottom: 13px;
+  margin-top: 28px;
+  margin-bottom: 0;
 }
 
 .advantage__text {
@@ -72,7 +72,7 @@
 
 @media (min-width: $tablet-width) {
   .advantage {
-    background: linear-gradient(-4deg, $lightgrey 65%, $white 24%);
+    background: linear-gradient(-4deg, $lightgrey 76%, $white 24%);
   }
 
   .advantage__title,
@@ -96,6 +96,8 @@
     flex-direction: column;
     align-items: flex-end;
 
+    padding-top: 72px;
+
     &::after {
       content: "";
       position: absolute;
@@ -118,14 +120,14 @@
     text-align: left;
 
     &:last-child {
-      padding-bottom: 20px;
+      padding-bottom: 25px;
 
       background: none;
     }
   }
 
   .advantage__subtitle {
-    margin-top: 22px;
+    margin-top: 19px;
   }
 
   .advantage__newline {
@@ -159,7 +161,7 @@
     justify-content: space-around;
     align-items: flex-start;
 
-    padding-top: 45px;
+    padding-top: 56px;
 
     &::after {
       display: none;
@@ -176,7 +178,12 @@
 
     text-align: center;
 
+    &:first-child {
+      margin-right: 16px;
+    }
+
     &:last-child {
+      margin-left: 16px;
       padding-bottom: 0px;
     }
 
@@ -208,16 +215,24 @@
   }
 
   .advantage__subtitle {
+    margin-top: 16px;
+
     font-size: 30px;
     line-height: 30px;
   }
 
   .advantage__text {
+    margin-top: 24px;
+
     font-size: 18px;
     line-height: 30px;
   }
 
   .advantage__newline {
     display: none;
+  }
+
+  .advantage__effect {
+    padding-top: 48px;
   }
 }

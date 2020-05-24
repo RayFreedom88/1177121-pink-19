@@ -28,11 +28,11 @@
 .user-comments__textarea {
   width: 100%;
 
-  margin-top: 20px;
-
-  padding-top: 20px;
+  margin-top: 10px;
+  padding-top: 15px;
   padding-left: 20px;
-  padding-bottom: 20px;
+  padding-right: 19px;
+  padding-bottom: 32px;
 
   font-size: 18px;
   font-weight: 400;
@@ -63,11 +63,23 @@
     border: 2px solid $grey;
   }
 
-  .profile__legend--comments {
-    display: block;
-  }
-
   .user-comments__label {
     display: none;
+  }
+
+  .user-comments__textarea {
+    margin-top: 10px;
+    padding-top: 14px;
+    padding-left: 19px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-comments__textarea {
+    height: max-content;
+
+    margin-top: 7px;
+    padding-bottom: 110px;
   }
 }

@@ -26,7 +26,7 @@
   justify-content: center;
   align-items: center;
 
-  margin-top: 50px;
+  margin-top: 34px;
   padding: 0;
 }
 
@@ -34,7 +34,7 @@
   width: 6px;
   height: 6px;
 
-  margin: 0 6px;
+  margin: 0 9px;
   padding: 0;
 
   background-color: rgba($blue, 0.3);
@@ -71,8 +71,8 @@
   .slider {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .slider__list {
@@ -86,7 +86,8 @@
   .slider__btn {
     display: block;
 
-    border: none;
+    margin-bottom: 72px;
+    padding: 0;
 
     background-color: transparent;
     fill: rgba(#7e868f, 0.3);
@@ -99,5 +100,7 @@
     &:active {
       fill: rgba(#7e868f, 0.1);
     }
+
+    border: none;
   }
 }

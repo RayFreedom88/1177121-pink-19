@@ -1,7 +1,7 @@
 /* prices */
 
 .prices {
-  background: linear-gradient(-5deg, $lightgrey 89%, $white 10%);
+  background: linear-gradient(-4deg, $lightgrey 84%, $white 10%);
 
   width: 100%;
 }
@@ -21,6 +21,6 @@
 
 @media (min-width: $desktop-width) {
   .prices {
-    background: linear-gradient(-5deg, $lightgrey 79%, $white 10%);
+    background: linear-gradient(-4deg, $lightgrey 81%, $white 10%);
   }
 }

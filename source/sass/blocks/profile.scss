@@ -16,8 +16,8 @@
   width: 280px;
 
   margin: 0 auto;
-  padding-top: 50px;
-  padding-bottom: 40px;
+  padding-top: 45px;
+  padding-bottom: 34px;
 
   &--form {
     display: none;
@@ -42,22 +42,28 @@
     padding-bottom: 40px;
   }
 
-  &--checkbox,
-  &--radio {
+  &--checkbox {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 45px;
+
+    background-color: $lightgrey;
+  }
+
+  &--radio {
+    padding-top: 38px;
+    padding-bottom: 46px;
 
     background-color: $lightgrey;
   }
 
   &--contacts {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 32px;
+    padding-bottom: 42px;
   }
 
   &--comments {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 32px;
+    padding-bottom: 39px;
   }
 
   &--btn {
@@ -73,10 +79,12 @@
 }
 
 .profile__user-comments {
+  margin: 0;
   padding: 0;
 }
 
 .profile__user-info {
+  margin: 0;
   padding: 0;
 }
 
@@ -102,6 +110,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  padding-bottom: 15px;
 }
 
 .profile__button {
@@ -121,7 +131,7 @@
 
 .profile__important {
   margin: 0;
-  margin-top: 44px;
+  margin-top: 36px;
 
   font-size: 14px;
   font-weight: 400;
@@ -133,14 +143,18 @@
   color: $pink;
 }
 
+.profile__desktop {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .profile__text {
     font-size: 18px;
 
     width: 490px;
 
-    padding-top: 76px;
-    padding-bottom: 80px;
+    padding-top: 92px;
+    padding-bottom: 71px;
 
     &--form {
       display: block;
@@ -149,24 +163,46 @@
   }
 
   .profile__wrapper {
-    padding-bottom: 50px;
+    &--user {
+      order: 1;
 
-    &--checkbox,
-    &--radio {
+      padding-bottom: 58px;
+    }
+
+    &--checkbox {
+      order: 4;
+
       padding-top: 0;
-      padding-bottom: 40px;
+      padding-bottom: 57px;
+
+      background-color: transparent;
+    }
+
+    &--radio {
+      order: 2;
+
+      padding-top: 0;
+      padding-bottom: 57px;
 
       background-color: transparent;
     }
 
     &--contacts {
+      order: 3;
+
       padding-top: 0;
+      padding-bottom: 57px;
     }
     &--comments {
+      order: 5;
+
       padding-top: 0;
+      padding-bottom: 67px;
     }
 
     &--btn {
+      order: 6;
+
       padding: 0;
     }
   }
@@ -179,31 +215,63 @@
     padding: 0 60px;
     padding-top: 40px;
     padding-bottom: 50px;
+
+    &--checkbox {
+      padding-top: 48px;
+      padding-bottom: 53px;
+    }
+
+    &--radio {
+      padding-top: 49px;
+      padding-bottom: 58px;
+    }
   }
 
   .profile__user-comments {
-    padding: 0 60px;
-    padding-top: 40px;
-    padding-bottom: 50px;
+    padding: 0 58px;
+    padding-top: 27px;
+    padding-bottom: 41px;
   }
 
   .profile__legend {
     width: auto;
 
-    padding: 0 35px;
+    &--checkbox {
+      padding: 0 32px;
+    }
 
     &--contacts {
       display: block;
+
+      padding: 0 31px;
+    }
+
+    &--radio {
+      padding: 0 26px;
+    }
+
+    &--comments {
+      display: block;
+
+      padding: 0 38px;
     }
   }
 
   .profile__wrapper-btn {
     flex-direction: row;
     justify-content: space-between;
+
+    padding-bottom: 50px;
   }
 
   .profile__button {
-    width: 296px;
+    width: 300px;
+
+    padding-bottom: 18px;
+  }
+
+  .profile__important {
+    margin-top: 5px;
   }
 }
 
@@ -219,6 +287,7 @@
   .profile__form {
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
 
     width: 960px;
 
@@ -230,6 +299,8 @@
       order: 1;
 
       flex-basis: 47%;
+
+      padding-top: 13px;
     }
 
     &--checkbox {
@@ -259,7 +330,39 @@
     }
   }
 
+  .profile__filter-input {
+    &--checkbox {
+      padding-bottom: 8px;
+    }
+
+    &--radio {
+      padding: 0 55px;
+      padding-top: 50px;
+      padding-bottom: 58px;
+    }
+  }
+
+  .profile__user-comments {
+    padding-bottom: 33px;
+  }
+
+  .profile__legend{
+    &--radio {
+      width: 320px;
+
+      padding: 0;
+    }
+  }
+
+  .profile__wrapper-btn {
+    padding-bottom: 0;
+  }
+
   .profile__important {
     margin: 0;
+  }
+
+  .profile__desktop {
+    display: inline;
   }
 }

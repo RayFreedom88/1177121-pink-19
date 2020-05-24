@@ -14,8 +14,8 @@
   min-width: 279px;
   max-height: 94px;
 
-  padding-top: 15px;
-  padding-bottom: 22px;
+  padding-top: 18px;
+  padding-bottom: 23px;
 
   color: $white;
   background-color: $blue;
@@ -242,8 +242,8 @@
 
   .price-list__feature-value--on {
     &::before {
-      top: -13px;
-      right: -13px;
+      top: -9px;
+      right: -11px;
     }
   }
 
@@ -317,6 +317,13 @@
 
   .price-list__option--feature {
     padding: 14px 25px;
+  }
+
+  .price-list__feature-value--on {
+    &::before {
+      top: -7px;
+      right: -14px;
+    }
   }
 }
 
