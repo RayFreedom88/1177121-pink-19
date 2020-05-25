@@ -42,20 +42,6 @@
   }
 }
 
-.feedback__triangle {
-  position: absolute;
-  top: 0px;
-  left: 50%;
-
-  width: 100%;
-  height: 35px;
-
-  transform: translateX(-50%);
-  z-index: 2;
-
-  fill: $white;
-}
-
 .feedback__map {
   position: relative;
 
@@ -93,8 +79,6 @@
 
   .feedback__map {
     height: 372px;
-
-    display: none;
   }
 }
 
