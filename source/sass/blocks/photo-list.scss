@@ -1,19 +1,12 @@
 /* photo-list */
 
 .photo-list {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-
   width: 100%;
 
   margin: 0;
   padding: 0;
 
   line-height: 0;
-
-  overflow-x: hidden;
 }
 
 .photo-list__link {
@@ -113,12 +106,13 @@
   &::before {
     content: "";
 
-    width: 13px;
+    width: 14px;
     height: 12px;
 
     margin-right: 17px;
 
     background-image: url(../img/icon-heart.svg);
+    background-repeat: no-repeat;
   }
 }
 
@@ -132,6 +126,11 @@
 
 @media (min-width: $tablet-width) {
   .photo-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
     flex-grow: 1;
 
     &--panorama {
@@ -140,12 +139,12 @@
   }
 
   .photo-list__ticket {
-    top: 54px;
+    top: 56px;
   }
 
-  .photo-list__img {
+  .photo-list__img{
     &--panorama {
-      height: 506px;
+      min-height: 509px;
     }
   }
 
@@ -156,7 +155,7 @@
 
     padding-top: 24px;
     padding-left: 28px;
-    padding-right: 32px;
+    padding-right: 30px;
     padding-bottom: 22px;
 
     &--panorama {
@@ -193,6 +192,12 @@
 @media (min-width: $desktop-width) {
   .photo-list__ticket {
     right: 130px;
+  }
+
+  .photo-list__img {
+    &--panorama {
+      min-height: auto;
+    }
   }
 
   .photo-list__figcaption{

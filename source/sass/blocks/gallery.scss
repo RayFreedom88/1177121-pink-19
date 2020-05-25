@@ -7,9 +7,10 @@
 }
 
 .gallery__wrapper {
-  width: 100%;
-
+  // изменения
   padding-bottom: 22px;
+
+  overflow-x: hidden;
 }
 
 .gallery__list {
