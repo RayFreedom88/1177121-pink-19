@@ -25,6 +25,8 @@
 }
 
 .profile__form {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -145,6 +147,22 @@
 
 .profile__desktop {
   display: none;
+}
+
+.profile__modal-error {
+  position: absolute;
+  top: 761px;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
+}
+
+.profile__modal-send {
+  position: absolute;
+  bottom: 438px;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
 }
 
 @media (min-width: $tablet-width) {
@@ -273,6 +291,15 @@
   .profile__important {
     margin-top: 5px;
   }
+
+  .profile__modal-error {
+    top: 214px;
+  }
+
+  .profile__modal-send {
+    top: 691px;
+    bottom: auto;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -364,5 +391,14 @@
 
   .profile__desktop {
     display: inline;
+  }
+
+  .profile__modal-error {
+    top: 200px;
+  }
+
+  .profile__modal-send {
+    top: 658px;
+    bottom: auto;
   }
 }

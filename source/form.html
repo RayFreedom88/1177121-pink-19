@@ -237,13 +237,32 @@
           <div class="profile__wrapper profile__wrapper--btn">
             <div class="container">
               <div class="profile__wrapper-btn">
-                <button class="profile__button button" type="submit">Отправить форму</button>
+                <button class="profile__button button button--green" type="submit">Отправить форму</button>
 
                 <p class="profile__important">
 
                   <sup class="profile__star">*</sup> — обязательные<span class="profile__desktop"> для заполнения</span> поля
                 </p>
               </div>
+            </div>
+          </div>
+
+          <div class="profile__modal-error modal">
+            <p class="modal__title">Что-то пошло<span class="modal__newline modal__newline--error"></span> не так!</p>
+            <p class="modal__text modal__text--error">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+
+            <div class="modal__wrapper modal__wrapper--error">
+              <button type="button" class="modal__button button button--green" name="btn-modal-error">Ок</button>
+            </div>
+          </div>
+
+          <div class="profile__modal-send modal">
+            <p class="modal__title">Ваша заявка отправлена</p>
+            <p class="modal__text modal__text--send">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и<span class="modal__newline"></span>
+              оповестим вас.</p>
+
+            <div class="modal__wrapper">
+              <button type="button" class="modal__button button button--green" name="btn-modal-send">Закрыть окно</button>
             </div>
           </div>
         </form>
