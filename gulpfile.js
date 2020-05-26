@@ -3,9 +3,13 @@
 var gulp = require("gulp");
 var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
+var rename = require("gulp-rename");
 var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
+var csso = require("gulp-csso");
+var imagemin = require("gulp-imagemin");
+var svgstore = require("gulp-svgstore");
 var server = require("browser-sync").create();
 
 gulp.task("css", function () {
@@ -16,8 +20,32 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(csso())
+    .pipe(rename("min.style.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))
+    .pipe(server.stream());
+});
+
+gulp.task("images", function () {
+  return gulp.src ("source/img/**/*.{png,jpg,svg}")
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.mozjpeg({quality: 75, progressive: true}),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest("source/img"))
+    .pipe(server.stream());
+});
+
+gulp.task("sprite", function () {
+  return gulp.src(["source/img/logo-pink-*.svg"])
+    .pipe(plumber())
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img/sprite"))
     .pipe(server.stream());
 });
 
