@@ -36,7 +36,7 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
-  border: 2px solid $grey;
+  border: 2px solid $grey-light;
 
   &::placeholder {
     color: $blue;
@@ -62,6 +62,7 @@
       padding-right: 58px;
 
       border-style: solid;
+      border-color: $grey-light;
     }
   }
 
@@ -106,10 +107,10 @@
       position: absolute;
       top: -61px;
 
-      width: 59px;
-      height: 59px;
+      width: 60px;
+      height: 60px;
 
-      background-color: $grey;
+      background-color: $grey-light;
       background-position: center;
       background-repeat: no-repeat;
     }
@@ -117,7 +118,7 @@
 
   .user-info__label--phone {
     &::after {
-      right: -351px;
+      right: -352px;
 
       background-image: url("../img/icon-phone.svg");
     }
@@ -127,7 +128,7 @@
     padding-bottom: 26px;
 
     &::after {
-      right: -381px;
+      right: -382px;
 
       background-image: url("../img/icon-mail.svg");
     }
@@ -183,7 +184,8 @@
     padding-top: 10px;
 
     &::after {
-      right: -226px;
+      top: -62px;
+      right: -227px;
     }
   }
 
@@ -191,7 +193,8 @@
     padding-top: 10px;
 
     &::after {
-      right: -256px;
+      top: -62px;
+      right: -257px;
     }
   }
 

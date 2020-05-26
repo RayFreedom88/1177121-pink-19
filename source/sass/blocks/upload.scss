@@ -54,7 +54,7 @@
 }
 
 .upload__button--crop {
-  background-image: url(../img/icon-editor-crop.svg);
+  background-image: url("../img/icon-editor-crop.svg");
 
   &:hover,
   &:focus {
@@ -62,13 +62,13 @@
   }
 
   &:active {
-    background-image: url(../img/icon-editor-crop-on.svg);
+    background-image: url("../img/icon-editor-crop-on.svg");
     opacity: 1;
   }
 }
 
 .upload__button--fill {
-  background-image: url(../img/icon-editor-fill.svg);
+  background-image: url("../img/icon-editor-fill.svg");
 
   &:hover,
   &:focus {
@@ -76,13 +76,13 @@
   }
 
   &:active {
-    background-image: url(../img/icon-editor-fill-on.svg);
+    background-image: url("../img/icon-editor-fill-on.svg");
     opacity: 1;
   }
 }
 
 .upload__button--contrast {
-  background-image: url(../img/icon-editor-contrast.svg);
+  background-image: url("../img/icon-editor-contrast.svg");
 
   &:hover,
   &:focus {
@@ -90,23 +90,23 @@
   }
 
   &:active {
-    background-image: url(../img/icon-editor-contrast-on.svg);
+    background-image: url("../img/icon-editor-contrast-on.svg");
     opacity: 1;
   }
 }
 
 .upload__button--active.upload__button--crop {
-  background-image: url(../img/icon-editor-crop-on.svg);
+  background-image: url("../img/icon-editor-crop-on.svg");
   opacity: 1;
 }
 
 .upload__button--active.upload__button--fill {
-  background-image: url(../img/icon-editor-fill-on.svg);
+  background-image: url("../img/icon-editor-fill-on.svg");
   opacity: 1;
 }
 
 .upload__button--active.upload__button--contrast {
-  background-image: url(../img/icon-editor-contrast-on.svg);
+  background-image: url("../img/icon-editor-contrast-on.svg");
   opacity: 1;
 }
 
@@ -242,19 +242,19 @@
   }
 
   .upload__button--crop {
-    background-image: url(../img/icon-editor-crop-on.svg);
+    background-image: url("../img/icon-editor-crop-on.svg");
     background-size: 24px 24px;
     background-position: bottom 3px left 3px;
   }
 
   .upload__button--fill {
-    background-image: url(../img/icon-editor-fill-on.svg);
+    background-image: url("../img/icon-editor-fill-on.svg");
     background-size: 24px 24px;
     background-position: top 3px left 3px;
   }
 
   .upload__button--contrast {
-    background-image: url(../img/icon-editor-contrast-on.svg);
+    background-image: url("../img/icon-editor-contrast-on.svg");
     background-size: 16px 16px;
     background-position: bottom right;
   }

@@ -37,7 +37,7 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
-  border: 2px solid $grey;
+  border: 2px solid $grey-light;
 
   resize: none;
 
@@ -60,7 +60,7 @@
 
 @media (min-width: $tablet-width) {
   .user-comments {
-    border: 2px solid $grey;
+    border: 2px solid $grey-light;
   }
 
   .user-comments__label {
@@ -71,7 +71,7 @@
     margin-top: 10px;
     padding-top: 14px;
     padding-left: 19px;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
   }
 }
 
