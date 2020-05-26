@@ -2,7 +2,7 @@
 
 .feedback {
   background-color: $white;
-  min-height: 574px;;
+  min-height: 574px;
   width: 100%;
 }
 
@@ -28,7 +28,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 0;
 
     width: 100%;
