@@ -20,14 +20,13 @@
 .main-nav__toggle {
   position: absolute;
   top: -50px;
-  right: 19px;
+  right: 12px;
 
   display: block;
 
   background-color: transparent;
-
-  cursor: pointer;
   border: none;
+  cursor: pointer;
 }
 
 .main-nav__burger,
@@ -53,13 +52,23 @@
   display: none;
 }
 
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    top: -66px;
+    right: 13px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .main-nav__list {
     display: flex;
     flex-direction: row;
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
+
     width: 620px;
+
+    margin-right: 12px;
   }
 
   .main-nav__toggle {

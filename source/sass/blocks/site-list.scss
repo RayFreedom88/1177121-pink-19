@@ -52,6 +52,8 @@
 
 @media (min-width: $desktop-width) {
   .site-list__item {
+    width: auto;
+
     box-shadow: none;
 
     &:first-of-type {
@@ -63,5 +65,9 @@
     font-weight: 300;
     line-height: 18px;
     text-transform: none;
+
+    &--active::after {
+    bottom: -10px;
+    }
   }
 }

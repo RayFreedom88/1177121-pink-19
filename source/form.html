@@ -10,7 +10,7 @@
     <!-- Page-header - Шапка -->
     <header class="page-header page-header--open">
       <div class="page-header__wrapper">
-        <a class="page-header__logo logo" href="" >
+        <a class="page-header__logo page-header__logo--open logo" href="" >
           <svg class="logo__img-mobile" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
             <g>
               <path d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
@@ -123,15 +123,15 @@
                 <legend class="visually-hidden">Напишете как вас зовут</legend>
                 <p class="user-info__item">
                   <label class="user-info__label" for="user-surname">Фамилия:</label>
-                  <input class="user-info__input" id="user-surname" type="text" name="surname" placeholder="Укажите фамилию *" required>
+                  <input class="user-info__input user-info__input--surname" id="user-surname" type="text" name="surname" placeholder="Укажите фамилию *" required>
                 </p>
                 <p class="user-info__item">
                   <label class="user-info__label" for="user-name">Имя:</label>
-                  <input class="user-info__input" id="user-name" type="text" name="name" placeholder="Введите ваше имя *" required>
+                  <input class="user-info__input user-info__input--name" id="user-name" type="text" name="name" placeholder="Введите ваше имя *" required>
                 </p>
                 <p class="user-info__item">
                   <label class="user-info__label" for="user-patronym">Отчество:</label>
-                  <input class="user-info__input" id="user-patronym" type="text" name="patronym" placeholder="Ну и отчество тоже">
+                  <input class="user-info__input user-info__input--patronym" id="user-patronym" type="text" name="patronym" placeholder="Ну и отчество тоже">
                 </p>
               </fieldset>
             </div>
@@ -139,36 +139,36 @@
 
           <div class="profile__wrapper profile__wrapper--checkbox">
             <div class="container">
-              <fieldset class="profile__filter-input filter-input">
-                <legend class="profile__legend">Ваши безбашенные достижения в путешествии</legend>
+              <fieldset class="profile__filter-input profile__filter-input--checkbox filter-input">
+                <legend class="profile__legend profile__legend--checkbox">Ваши безбашенные достижения в путешествии</legend>
 
                 <ul class="filter-input__list">
-                  <li class="filter-input__option">
+                  <li class="filter-input__option filter-input__option--checkbox">
                     <input class="visually-hidden filter-input__checkbox" type="checkbox" id="shark" name="shark" value="shark" checked>
                     <label class="filter-input__label filter-input__label--checkbox" for="shark">Сделал селфи с акулой</label>
                   </li>
 
-                  <li class="filter-input__option">
+                  <li class="filter-input__option filter-input__option--checkbox">
                     <input  class="visually-hidden filter-input__checkbox" type="checkbox" id="burnt" name="burnt" value="burnt" checked>
                     <label class="filter-input__label filter-input__label--checkbox" for="burnt">Обгорел на пляже</label>
                   </li>
 
-                  <li class="filter-input__option">
+                  <li class="filter-input__option filter-input__option--checkbox">
                     <input  class="visually-hidden filter-input__checkbox" type="checkbox" id="chuck" name="chuck" value="chuck">
                     <label class="filter-input__label filter-input__label--checkbox" for="chuck">Видел Чака Норриса</label>
                   </li>
 
-                  <li class="filter-input__option">
+                  <li class="filter-input__option filter-input__option--checkbox">
                     <input  class="visually-hidden filter-input__checkbox" type="checkbox" id="memento" name="memento" value="gift">
                     <label class="filter-input__label filter-input__label--checkbox" for="memento">Накупил сувениров</label>
                   </li>
 
-                  <li class="filter-input__option">
+                  <li class="filter-input__option filter-input__option--checkbox">
                     <input  class="visually-hidden filter-input__checkbox" type="checkbox" id="tower" name="tower" value="tower" checked>
                     <label class="filter-input__label filter-input__label--checkbox" for="tower">Удержал башню</label>
                   </li>
 
-                  <li class="filter-input__option">
+                  <li class="filter-input__option filter-input__option--checkbox">
                     <input  class="visually-hidden filter-input__checkbox" type="checkbox" id="hotel" name="hotel" value="hotel">
                     <label class="filter-input__label filter-input__label--checkbox" for="hotel">Разгромил отель</label>
                   </li>
@@ -198,21 +198,21 @@
 
           <div class="profile__wrapper profile__wrapper--radio">
             <div class="container">
-              <fieldset class="profile__filter-input filter-input">
-                <legend class="profile__legend">С каким приложением путешествовали?</legend>
+              <fieldset class="profile__filter-input profile__filter-input--radio filter-input">
+                <legend class="profile__legend profile__legend--radio">С каким приложением путешествовали?</legend>
 
                 <ul class="filter-input__list">
-                  <li class="filter-input__option">
+                  <li class="filter-input__option filter-input__option--radio">
                     <input class="visually-hidden filter-input__radio" type="radio" name="app-version" id="ios" value="ios" checked>
-                    <label class="filter-input__label filter-input__label--radio" for="ios">Pink для iOs</label>
+                    <label class="filter-input__label filter-input__label--radio" for="ios">Pink для iOS</label>
                   </li>
 
-                  <li class="filter-input__option">
+                  <li class="filter-input__option filter-input__option--radio">
                     <input class="visually-hidden filter-input__radio" type="radio" name="app-version" id="android" value="android">
                     <label class="filter-input__label filter-input__label--radio" for="android">Pink на Android</label>
                   </li>
 
-                  <li class="filter-input__option">
+                  <li class="filter-input__option filter-input__option--radio">
                     <input class="visually-hidden filter-input__radio" type="radio" name="app-version" id="windowsphone" value="windowsphone">
                     <label class="filter-input__label filter-input__label--radio" for="windowsphone">Windows Phone</label>
                   </li>
@@ -228,7 +228,7 @@
 
                 <p class="user-comments__item">
                   <label class="user-comments__label" for="comment-field">Опишите свои эмоции</label>
-                  <textarea class="user-comments__textarea" name="comment" id="comment-field" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                  <textarea class="user-comments__textarea" name="comment" id="comment-field" rows="5" cols="30" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
                 </p>
               </fieldset>
             </div>
@@ -237,12 +237,32 @@
           <div class="profile__wrapper profile__wrapper--btn">
             <div class="container">
               <div class="profile__wrapper-btn">
-                <button class="profile__button button" type="submit">Отправить форму</button>
+                <button class="profile__button button button--green" type="submit">Отправить форму</button>
 
                 <p class="profile__important">
-                  <sup class="profile__star">*</sup> — обязательные поля
+
+                  <sup class="profile__star">*</sup> — обязательные<span class="profile__desktop"> для заполнения</span> поля
                 </p>
               </div>
+            </div>
+          </div>
+
+          <div class="profile__modal-error modal">
+            <p class="modal__title">Что-то пошло<span class="modal__newline modal__newline--error"></span> не так!</p>
+            <p class="modal__text modal__text--error">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+
+            <div class="modal__wrapper modal__wrapper--error">
+              <button type="button" class="modal__button button button--green" name="btn-modal-error">Ок</button>
+            </div>
+          </div>
+
+          <div class="profile__modal-send modal">
+            <p class="modal__title">Ваша заявка отправлена</p>
+            <p class="modal__text modal__text--send">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и<span class="modal__newline"></span>
+              оповестим вас.</p>
+
+            <div class="modal__wrapper">
+              <button type="button" class="modal__button button button--green" name="btn-modal-send">Закрыть окно</button>
             </div>
           </div>
         </form>
@@ -250,7 +270,7 @@
     </main>
 
     <!-- Footer - Подвал -->
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--index">
       <div class="container">
         <div class="page-footer__wrapper">
           <a class="page-footer__logo" href="" >
@@ -275,7 +295,6 @@
               </li>
             </ul>
           </div>
-
           <div class="page-footer__copyright copyright">
             <b class="copyright__text">Разработано</b>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">

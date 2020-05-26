@@ -2,7 +2,7 @@
 
 .feedback {
   background-color: $white;
-
+  min-height: 574px;;
   width: 100%;
 }
 
@@ -13,21 +13,33 @@
   margin: 0;
   padding: 0;
 
-  overflow: hidden;
-}
+  line-height: 0;
+  background-image: url(../img/bg-map-mobile@1x.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
 
-.feedback__triangle {
-  position: absolute;
-  top: 0px;
-  left: 50%;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url(../img/bg-map-mobile@2x.jpg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 320px;
+  }
 
-  width: 100%;
-  height: 35px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
 
-  transform: translateX(-50%);
-  z-index: 2;
+    width: 100%;
+    height: 35px;
 
-  fill: $white;
+    background-image: url(../img/bg-triangle-white-footer.svg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+
+    z-index: 2;
+  }
 }
 
 .feedback__map {
@@ -46,10 +58,23 @@
 @media (min-width: $tablet-width) {
   .feedback__wrapper {
     min-height: 372px;
-  }
 
-  .feedback__triangle {
-    height: 70px;
+    background-image: url(../img/bg-map-tablet@1x.jpg);
+    background-position: bottom center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url(../img/bg-map-tablet@2x.jpg);
+      background-size: 700px;
+    }
+
+    &::before {
+      top: -2px;
+      left: 0;
+
+      height: 70px;
+
+      background-size: 100%;
+    }
   }
 
   .feedback__map {
@@ -59,7 +84,20 @@
 
 @media (min-width: $desktop-width) {
   .feedback__wrapper {
-    min-height: 512px;
+    min-height: 511px;
+
+    background-image: url(../img/bg-map-desktop@1x.jpg);
+    background-position: top -268px center;
+    background-size: 1200px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url(../img/bg-map-desktop@2x.jpg);
+    }
+
+    &::before {
+      height: 115px;
+      background-size: 120% 125px;
+    }
   }
 
   .feedback__triangle {

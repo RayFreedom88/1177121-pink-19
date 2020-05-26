@@ -8,7 +8,7 @@
 
 .user-info__item {
   margin: 0;
-  padding-top: 29px;
+  padding-top: 17px;
 
   &:first-of-type {
     padding: 0;
@@ -16,7 +16,7 @@
 }
 
 .user-info__label {
-  margin-left: 20px;
+  margin-left: 22px;
 
   font-size: 14px;
   font-weight: 400;
@@ -28,7 +28,7 @@
 .user-info__input {
   width: 100%;
 
-  margin-top: 10px;
+  margin-top: 5px;
   padding-top: 15px;
   padding-left: 20px;
   padding-bottom: 14px;
@@ -58,7 +58,8 @@
 @media (min-width: $tablet-width) {
   .user-info {
     &--contacts {
-      padding: 0 60px;
+      padding-left: 58px;
+      padding-right: 58px;
 
       border-style: solid;
     }
@@ -72,7 +73,7 @@
     display: flex;
     align-items: center;
 
-    padding-top: 56px;
+    padding-top: 52px;
 
     &:first-of-type {
       padding-top: 0;
@@ -96,8 +97,8 @@
   .user-info__label--email {
     position: relative;
 
-    margin-left: 20px;
-    padding-top: 14px;
+    margin-left: 19px;
+    padding-top: 10px;
 
 
     &::after {
@@ -115,15 +116,15 @@
   }
 
   .user-info__label--phone::after {
-    right: -346px;
+    right: -351px;
   }
 
   .user-info__label--email::after {
-    right: -376px;
+    right: -381px;
   }
 
   .user-info__label--email {
-    padding-bottom: 33px;
+    padding-bottom: 26px;
   }
 
   .user-info__label--phone {
@@ -139,40 +140,77 @@
   }
 
   .user-info__input {
-    margin: 0;
-    margin-left: 22px;
-
-    &--phone,
-    &--email {
+    &--surname {
       margin: 0;
-      margin-top: 40px;
+      margin-left: 19px;
+    }
+
+    &--name {
+      margin: 0;
+      margin-left: 19px;
+    }
+
+    &--patronym {
+      margin: 0;
+      margin-left: 19px;
+    }
+
+    &--phone{
+      margin: 0;
+      margin-top: 37px;
+      padding-left: 18px;
+    }
+
+    &--email {
+      margin-top: 29px;
+      padding-left: 18px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .user-info {
+    &--contacts {
+      padding-bottom: 13px;
+    }
+  }
+
   .user-info__wrapper {
     display: flex;
     justify-content: space-between;
   }
 
   .user-info__label {
-    padding-bottom: 20px;
+    padding-top: 2px;
+    padding-bottom: 0px;
   }
 
-  .user-info__label--phone::after {
-    right: -222px;
+  .user-info__label--phone {
+    padding-top: 10px;
+
+    &::after {
+      right: -226px;
+    }
   }
 
-  .user-info__label--email::after {
-    right: -252px;
+  .user-info__label--email {
+    padding-top: 10px;
+
+    &::after {
+      right: -256px;
+    }
   }
 
-  .user-info__input--phone {
-    width: 371px;
-  }
+  .user-info__input {
 
-  .user-info__input--email {
-    width: 371px;
+    &--phone {
+      width: 375px;
+
+      margin-top: 34px;
+    }
+
+    &--email {
+      width: 375px;
+    }
   }
 }
