@@ -24,11 +24,18 @@
 
   padding-left: 15px;
   padding-right: 2px;
+
+  fill: $darkpink;
+
+  &:hover {
+    fill: $blue;
+  }
+  &:active {
+    fill: $darkpink;
+    opacity: 0.3;
+  }
 }
 
-.copyright__img {
-  fill: $pink;
-}
 
 @media (min-width: $tablet-width) {
   .copyright__text {

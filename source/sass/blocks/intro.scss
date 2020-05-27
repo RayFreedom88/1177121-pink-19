@@ -14,6 +14,15 @@
 
 .intro__download {
   margin-top: 28px;
+
+  &:hover {
+    color: $pink;
+    background-color: $white;
+  }
+
+  &:active {
+    color: rgba($pink, 0.3);
+  }
 }
 
 .intro__list {
@@ -74,7 +83,7 @@
 @media (min-width: $desktop-width) {
   .intro__download {
     margin-left: 6px;
-    padding-top: 14px;
+    padding-top: 15px;
     padding-left: 28px;
     padding-right: 28px;
     padding-bottom: 17px;

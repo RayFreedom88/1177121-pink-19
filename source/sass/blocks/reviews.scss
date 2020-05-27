@@ -19,11 +19,23 @@
     text-align: center;
   }
 
-  .reviews__icon-quotes {
-    display: inline-block;
+  .reviews__slider {
+    position: relative;
 
-    margin-bottom: 31px;
+    padding-top: 98px;
 
-    fill: #efefef;
+    &::before {
+      content: "";
+      position: absolute;
+
+      top: 0;
+      left: calc(50% - 37px);
+      width: 79px;
+      height: 64px;
+
+      background-image: url("../img/icon-quotes.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
   }
 }

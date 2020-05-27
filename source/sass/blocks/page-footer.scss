@@ -20,6 +20,20 @@
 
 .page-footer__logo {
   margin-bottom: 37px;
+
+  fill: $blue;
+
+  &:hover {
+    fill: $darkpink;
+  }
+  &:active {
+    fill: $blue;
+    opacity: 0.3;
+  }
+}
+
+.page-footer__img-desktop {
+  display: none;
 }
 
 .page-footer__social {
@@ -63,6 +77,14 @@
   .page-footer {
     padding-top: 63px;
     padding-bottom: 63px;
+  }
+
+  .page-footer__img {
+    display: none;
+  }
+
+  .page-footer__img-desktop {
+    display: block;
   }
 
   .page-footer__copyright {
