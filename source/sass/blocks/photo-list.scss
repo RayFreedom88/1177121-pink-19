@@ -62,13 +62,17 @@
 .photo-list__figcaption {
   align-self: stretch;
 
-  margin: 0;
+  margin: 0 auto;
   padding-top: 18px;
   padding-left: 18px;
   padding-right: 10px;
   padding-bottom: 19px;
 
   background-color: $lightgrey;
+
+  &--panorama {
+    width: 280px;
+  }
 }
 
 .photo-list__author-name {
@@ -163,6 +167,8 @@
       flex-wrap: wrap;
       justify-content: space-between;
 
+      width: 620px;
+
       padding-top: 24px;
       padding-left: 27px;
       padding-right: 29px;
@@ -201,6 +207,10 @@
   }
 
   .photo-list__figcaption {
+    &--panorama {
+      width: 940px;
+    }
+
     &--last {
       height: 157px;
     }

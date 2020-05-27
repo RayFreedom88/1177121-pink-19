@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>document.createElement( "picture" );</script>
+    <script src="./js/picturefill.min.js" async></script>
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/min.style.css">
   </head>
@@ -217,12 +219,14 @@
                   <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
                 </blockquote>
               </li>
+
               <li class="slider__item">
                 <blockquote class="review">
                   <cite class="review__author-name">Петр Николаев<span class="review__author-info">52 года, водитель мопеда</span></cite>
                   <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
                 </blockquote>
               </li>
+
               <li class="slider__item">
                 <blockquote class="review">
                   <cite class="review__author-name">Геннадий Филимонов<span class="review__author-info">22 года, твой сосед</span></cite>
@@ -230,11 +234,13 @@
                 </blockquote>
               </li>
             </ul>
+
             <button class="slider__btn slider__btn--right" type="button">
               <svg class="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
                 <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
               </svg>
             </button>
+
             <div class="slider__toggles">
               <button class="slider__toggle slider__toggle--active" type="button"><span class="visually-hidden">1</span></button>
               <button class="slider__toggle" type="button"><span class="visually-hidden">2</span></button>
@@ -366,6 +372,8 @@
 
       <!-- Feedback - Обратная связь -->
       <section class="page-main__feedback feedback">
+        <h2 class="visually-hidden">Обратна связь</h2>
+
         <div class="container">
           <div class="feedback__contacts contacts">
             <b class="contacts__title">Остались вопросы? Свяжитесь с нами!</b>
